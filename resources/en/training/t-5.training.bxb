@@ -1,0 +1,5 @@
+train (t-50n9tjfifa42xiwk62zmelfyf) {
+  utterance ("[g:UserHand:prompt] {[g:UserHand] (rock)[v:BaseHand:Rock]}")
+  plan (Y2BmUC3ISaxML8ovzUvRK8pPzg5ILEgtCk7OLC7OLyrWCy1OLfJIzEuhjjKnxOJUsDImBkYgZgCSnAwsQJoZzAaJMgIA)
+  last-modified (1613061351563)
+}

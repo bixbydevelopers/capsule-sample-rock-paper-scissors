@@ -1,0 +1,5 @@
+vocab (BaseHand) {
+  "Rock" {"Rock"}
+  "Paper" {"Paper"}
+  "Scissors" {"Scissors"}
+ }

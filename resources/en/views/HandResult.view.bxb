@@ -1,0 +1,63 @@
+// For simplicities sake, duplicate image-card markup is shown, see comments at end for refactor to a layout macro
+result-view {
+  match: Hands (hands) {
+  }
+  render {
+    layout {
+      section {
+        content {
+          image-card {
+            aspect-ratio (16:9)
+            title-area {
+              halign (Start)
+              slot1 {
+                text {
+                  value ("My")
+                  style (Title_M)
+                }
+              }
+            }
+            image-url ("images/#{value(hands.bixbyHand)}.png")
+          }
+          image-card {
+            aspect-ratio (16:9)
+            title-area {
+              halign (Start)
+              slot1 {
+                text {
+                  value ("Your")
+                  style (Title_M)
+                }
+              }
+            }
+            image-url ("images/#{value(hands.userHand)}.png")
+          }
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("Play Again")
+    }
+  }
+}
+
+
+// Using macros, replace the image-cards above with usage of the largeHand layout macro
+          // layout-macro (largeHand) {
+          //   param (hand) {
+          //     expression(hands.bixbyHand)
+          //   }
+          //   param (who) {
+          //     literal ("My")
+          //   }
+          // }
+          // layout-macro (largeHand) {
+          //   param (hand) {
+          //     expression(hands.userHand)
+          //   }
+          //   param (who) {
+          //     literal ("Your")
+          //   }
+          // }

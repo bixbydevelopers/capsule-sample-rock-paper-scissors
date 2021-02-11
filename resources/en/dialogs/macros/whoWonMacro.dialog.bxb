@@ -1,0 +1,17 @@
+template-macro-def (whoWon) {
+  params {
+    param (who) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    if (who eq 'tie') {
+      template ("We tie.")
+    }
+    else {
+      template ("${value(who)} win.")
+    }
+  }
+}

@@ -1,0 +1,5 @@
+train (t-o5k45fnoggscrc2c1zhulplaw) {
+  utterance ([g:SelectHand] Play Again)
+  plan (Y2BmUC7ISaxML8ovzUvRK8pPzg5ILEgtCk7OLC7OLyo20vNIzEspZtDAryg4NSc1uQSklEENv8rQ4tQisDomBkYgZgCSjAwMMBoA)
+  last-modified (1553192559058)
+}

@@ -1,0 +1,32 @@
+// Duplicate text should be refactored into macros - shown without for simplicity
+// See macro example at the bottom
+
+dialog (Result) {
+  match: Hands  (hands) {
+  }
+  switch (hands.whoWon) {    
+     case("tie") {
+       choose (Random) {
+         template("Your hand was ${value(hands.userHand)}, my hand is ${value(hands.bixbyHand)}. We tie")
+         template("Great minds think alike, we both chose ${value(hands.userHand)}. We tie")
+       }
+     }
+     case("you") {
+       choose (Random) {
+         template("Your hand was ${value(hands.userHand)}, my hand is ${value(hands.bixbyHand)}, you win!")
+         template("It must be your lucky day. Your hand was ${value(hands.userHand)}, my hand is ${value(hands.bixbyHand)}, you win!")
+       }     
+     }
+     case ("I") {
+       choose (Random) {
+         template("Your hand was ${value(hands.userHand)}, my hand is ${value(hands.bixbyHand)}, I win") 
+         template("Your hand was ${value(hands.userHand)}, my hand is ${value(hands.bixbyHand)}, the AI wins, the human loses") 
+       }
+     }
+  }
+}
+
+
+// To avoid duplicate text in templates, use dialog macros.
+// the first template for each case could be replaced by
+// template ("#{macro('handResult',hands)} #{macro('whoWon',hands.whoWon)}")

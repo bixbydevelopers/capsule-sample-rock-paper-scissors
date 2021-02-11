@@ -1,0 +1,10 @@
+data:
+  geo:
+    latitude: '37.334502'
+    longitude: '-121.890654'
+  time: '2019-03-21T18:18:41.499Z'
+  tz: America/Los_Angeles
+steps:
+  step-J5R:
+    step-CIQ: ~
+version: 2

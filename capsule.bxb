@@ -1,0 +1,28 @@
+capsule {
+  id (playground.rockPaperScissors)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+    target (bixby-watch-en-US)
+  }
+  store-countries {
+    all
+  }
+  store-sections {
+    section (GamesAndFun)
+  }
+  runtime-version (8) {
+    overrides {
+      allow-dialogs-on-detail-pages (true)
+      no-fallback-dialog-in-views (false)
+    }
+  }
+  capsule-imports {
+    import (viv.core) {
+      as (core)
+    }
+  }
+  default-action (SelectHand)
+}
+

@@ -1,0 +1,30 @@
+// handSelectionView.view.bxb
+input-view {
+  match: UserHand (this)
+
+  // optional selection dialog to overwrite any other default dialog
+  message (Select your hand, rock, paper or scissors)  
+
+  render {
+    // used to iterate over the list of possible hands
+    selection-of (this) {
+      where-each (one) { 
+        cell-card {
+          on-click {
+            intent {
+              goal: SelectHand
+              value: $expr(one)
+            }
+          }
+          slot2 {
+            content {
+              primary {
+                template ("#{value (one)}")
+              }
+            }
+          }          
+        }
+      }
+    }
+  }
+}

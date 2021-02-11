@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    hint (Start Rock Paper Scissors)
+    hint (Talk to Rock Paper Scissors)
+    hint (Load Rock Paper Scissors)
+  }
+}

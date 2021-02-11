@@ -1,0 +1,12 @@
+capsule-info {
+  display-name (Rock Paper Scissors)
+  description (Rock Papers Scissors game for Bixby)
+  developer-name (Roger Kibbe - @rogerkibbe)
+  icon-asset (/images/icon/rps-icon.jpg)
+  dispatch-name(Rock Paper Scissors)
+  search-keywords {
+    keyword (Rock)
+    keyword (Paper)
+    keyword (Scissors)
+  }
+}

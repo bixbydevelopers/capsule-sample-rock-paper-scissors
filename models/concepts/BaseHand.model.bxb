@@ -1,0 +1,6 @@
+enum (BaseHand) {
+  description (base hand concept)
+  symbol (Rock)
+  symbol (Paper)
+  symbol (Scissors)
+}
