@@ -1,4 +1,4 @@
-template-macro-def (handResult) {
+macro-def (handResult) {
   params {
     param (hands) {
       type (Hands)
