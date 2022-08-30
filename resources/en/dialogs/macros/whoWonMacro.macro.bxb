@@ -1,4 +1,4 @@
-template-macro-def (whoWon) {
+macro-def (whoWon) {
   params {
     param (who) {
       type (core.Text)

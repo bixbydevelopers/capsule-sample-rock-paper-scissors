@@ -1,4 +1,4 @@
-layout-macro-def(largeHand) {
+macro-def (largeHand) {
   params {
     param (hand) {
       type (BaseHand)
